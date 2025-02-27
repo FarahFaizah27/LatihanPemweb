@@ -1,0 +1,83 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: floralwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Judul Form */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Pengaturan Label dan Input */
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    width: 130px; /* Menyamakan ukuran label */
+}
+
+.separator {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Input Styling */
+input[type="text"], input[type="date"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Radio Button Styling */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Tombol Submit */
+input[type="submit"] {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #218838;
+}
