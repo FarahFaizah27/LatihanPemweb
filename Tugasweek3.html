@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi & Tabel Pendaftaran</title>
+    <link rel="stylesheet" type="text/css" href="Tampilan.css">
+</head>
+<body>
+    <h2>Formulir Pendaftaran UMKM</h2>
+
+    <form id="formPendaftaran" onsubmit="return tambahData(event)">
+        <input type="hidden" id="editIndex">
+
+        <div class="form-group">
+            <label for="nama">Nama UMKM</label>
+            <span class="separator">:</span>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-group">
+            <label for="noTelp">No Telp</label>
+            <span class="separator">:</span>
+            <input type="text" id="noTelp" name="noTelp" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <span class="separator">:</span>
+            <input type="text" id="alamat" name="alamat" required>
+        </div>
+
+        <div class="form-group">
+            <label for="kelas">Pilihan Kelas Mentoring</label>
+            <select id="kelas" required>
+                <option value="">Pilih Kelas</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Bisnis Online">Bisnis Online</option>
+                <option value="Manajemen Keuangan">Manajemen Keuangan</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Daftar">
+    </form>
+
+    <h2>Data Pendaftar</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>No Telp</th>
+                <th>Alamat</th>
+                <th>Pilihan Kelas</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="dataList"></tbody>
+    </table>
+
+    <script src="script3.js"></script>
+</body>
+</html>
