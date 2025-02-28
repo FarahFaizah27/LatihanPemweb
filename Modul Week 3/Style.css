@@ -1,0 +1,181 @@
+/*EKSTERNAL*/
+#tulisan {
+    color: rgb(73, 129, 241)
+}
+
+.boxawal {
+    background: rgb(217, 231, 246);
+    padding: 10px
+}
+
+/*MARGIN*/
+.box{
+    background: rgb(154, 214, 249);
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.box-dua{
+    background: rgb(221, 236, 248);
+    height: 100px;
+    width: 200px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+}
+
+/*PADDING*/
+.box2{
+    background: rgb(152, 211, 246);
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box-tiga{
+    background: rgb(217, 235, 246);
+    height: 100px;
+    width: 600px;
+    padding-left: 70px;
+}
+
+/*PENGATURAN FONT*/
+.tulisan_satu{
+    color: rgba(0, 162,  255, 0.945);
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.tulisan_dua{
+    color: rgb(117, 202, 169);
+    font-size: 24pt;
+    font-style: italic;
+}
+
+.tulisan_tiga{
+    color: rgb(234, 130, 130);
+    font-weight: bold;
+    font-style: oblique;
+}
+
+/*FORMAT TEXT*/
+.tulisan_1{
+    color: rgb(112, 174, 219);
+    text-decoration: underline;
+}
+
+.tulisan_2{
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: overline;
+}
+
+.tulisan_3{
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: line-through;
+    word-spacing: 10px;
+}
+
+/*POSITION*/
+div {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+   }
+
+   .container {
+    border: 2px solid black;
+    padding: 20px;
+    position: relative; /* Induk untuk elemen absolute */
+    height: 300px;
+    margin-bottom: 30px;
+   }
+
+   /* STATIC */
+   .static {
+    position: static;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+   }
+
+   /*RELATIVE */
+   .relative {
+    position: relative;
+    background-color: lightblue;
+    padding: 10px;
+    left: 20px;
+    top: 10px;
+   }
+
+   /* ABSOLUTE */
+   .absolute {
+    position: absolute;
+    background-color: lightcoral;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+   }
+
+   /* FIXED */
+   .fixed {
+    position: fixed;
+    background-color: lightgreen;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
+   }
+
+   /* STICKY */
+   .sticky {
+    position: sticky;
+    background-color: orange;
+    padding: 10px;
+    top: 0;
+   }
+
+   .spacer {
+    height: 800px; /* Untuk memberikan efek scroll */
+   }
+
+/*FLOAT*/
+.gambar {
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*DESIGN TABEL*/
+.table1 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #f2f5f7;
+}
+
+.table1 tr th {
+    background: #35a9db;
+    color: #fff;
+    font-weight: normal;
+}
+
+.table1, 
+th,
+td{
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.table tr:hover{
+    background-color: #f5f5f5;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
