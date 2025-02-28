@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const namaInput = document.getElementById("nama");
     const noTelpInput = document.getElementById("noTelp");
     const alamatInput = document.getElementById("alamat");
+    const bidangUsahaInput = document.getElementById("bidangusaha");
     const kelasInput = document.getElementById("kelas");
     const editIndexInput = document.getElementById("editIndex");
     const dataList = document.getElementById("dataList");
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let nama = namaInput.value.trim();
         let noTelp = noTelpInput.value.trim();
         let alamat = alamatInput.value.trim();
+        let bidangusaha = bidangUsahaInput.value.trim();
         let kelas = kelasInput.value;
 
         // Validasi Nama
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        let pendaftar = { nama, noTelp, alamat, kelas };
+        let pendaftar = { nama, noTelp, alamat, bidangusaha, kelas };
 
         let editIndex = editIndexInput.value;
         if (editIndex !== "") {
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${pendaftar.nama}</td>
                 <td>${pendaftar.noTelp}</td>
                 <td>${pendaftar.alamat}</td>
+                <td>${pendaftar.bidangusaha}</td>
                 <td>${pendaftar.kelas}</td>
                 <td>
                     <button onclick="editData(${index})">Edit</button>
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         namaInput.value = pendaftar.nama;
         noTelpInput.value = pendaftar.noTelp;
         alamatInput.value = pendaftar.alamat;
+        bidangUsahaInput.value = pendaftar.bidangusaha;
         kelasInput.value = pendaftar.kelas;
         editIndexInput.value = index;
     };
