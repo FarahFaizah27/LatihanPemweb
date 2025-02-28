@@ -51,6 +51,14 @@ input[type="text"], input[type="date"] {
     width: 100%;
 }
 
+select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
 /* Radio Button */
 .radio-group {
     display: flex;
@@ -73,6 +81,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #218838;
 }
+
+input.error {
+    border: 2px solid red;
+}
+
 
 /* Tabel */
 table {
@@ -105,3 +118,4 @@ button {
 button:hover {
     background: #f57c00;
 }
+
